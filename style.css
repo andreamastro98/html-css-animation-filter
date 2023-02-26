@@ -136,7 +136,7 @@
     position: absolute;
     top: -10px;
     left: 10%;
-    background: #f5f5f5;
+    background: #f53a3a;
     width: 60px;
     height: 20px;
 }
@@ -144,7 +144,35 @@
     position: absolute;
     bottom: -10px;
     right: 20%;
-    background: #f5f5f5;
+    background: #e62828;
     width: 60px;
     height: 20px;
+
+}
+
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: slide 2s linear;
+}
+@keyframes slide {
+    50% {left: 130px;}
+    100% {right: 130px;}
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: slidebott 2s linear;
+}
+@keyframes slidebott {
+    50% {right: 135px;}
+}
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: slide2 2s linear;
+}
+@keyframes slide2 {
+    25% {left: 160px; top: -10px;}
+    40% {left: 160px; top: 60px;}
+    70% {left: 0; right: 200px; top: 60px;}
+    80% {right: 200px; top: -20; left: 0;}
+    100% {}
 }
